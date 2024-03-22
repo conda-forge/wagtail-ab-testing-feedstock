@@ -1,5 +1,5 @@
 {% set name = "wagtail-ab-testing" %}
-{% set version = "0.9" %}
+{% set version = "0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wagtail-ab-testing-{{ version }}.tar.gz
-  sha256: 7fd6c7a3042c9c34d4f19a247182eca7f463821ad525195a4a25ef622fcaddab
+  sha256: d63243d116558a4cd3d82220a720ded9e67471e5dba6497db2509a4ae5b57ed4
 
 build:
   noarch: python
