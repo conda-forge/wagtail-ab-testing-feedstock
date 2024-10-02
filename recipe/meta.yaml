@@ -1,5 +1,5 @@
 {% set name = "wagtail-ab-testing" %}
-{% set version = "0.11" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 13cf4d4566825d746d72d59140ddc8e32784a6982823381c80285e3746c8014f
+  sha256: 9e65629cd1d537b7657630de8588825cd306eafbd92af09493b28b6d35b3ede0
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >=3.8
-    - wagtail >=4.1
+    - wagtail >=5.2
     - user-agents >=2.2,<2.3
     - numpy >=1.19.4,<2
     - scipy >=1.5.4,<2
