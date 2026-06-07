@@ -1,5 +1,5 @@
 {% set name = "wagtail-ab-testing" %}
-{% set version = "0.13" %}
+{% set version = "0.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: dedef8d399aa068137a817992385f8ab958879507b64261634209b239a28120c
+  sha256: 4f47b8965b0837694ebcec21fb5d0c9b5317572d5a2f0c4d8e7b5caf053f86f9
 
 build:
   noarch: python
@@ -21,10 +21,10 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - wagtail >=6.3
+    - wagtail >=7.0
     - user-agents >=2.2,<2.3
-    - numpy >=1.19.4,<2
-    - scipy >=1.5.4,<2
+    - numpy >=1.26,<3
+    - scipy >=1.15,<2
 
 test:
   imports:
