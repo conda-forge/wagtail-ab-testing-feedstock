@@ -9,6 +9,13 @@ Package license: BSD-3-Clause
 
 Summary: A/B Testing for Wagtail
 
+Development: https://github.com/wagtail-nest/wagtail-ab-testing
+
+A/B Testing for Wagtail — split-test traffic between two variants of a
+page and measure conversion against a configured goal. Tracks
+participants + conversions via the user-agents library and offers an
+admin UI for creating, viewing, and concluding tests.
+
 Current build status
 ====================
 
